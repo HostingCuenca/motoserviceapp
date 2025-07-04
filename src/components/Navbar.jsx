@@ -52,7 +52,7 @@ const Navbar = () => {
             >
               <Link to="/" className="flex items-center">
                 <img
-                    src="/src/assets/logo.png"
+                    src="/logo.png"
                     alt="MotoService Latacunga"
                     className="h-[69px] w-[298px] object-contain"
                     onError={(e) => {

@@ -34,7 +34,7 @@ const Footer = () => {
             <div>
               <div className="flex items-center mb-4">
                 <img
-                    src="/src/assets/footerlogo.png"
+                    src="/footerlogo.png"
                     alt="MotoService Latacunga"
                     className="h-[69px] w-[298px] object-contain"
                     onError={(e) => {
