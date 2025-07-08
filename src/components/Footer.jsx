@@ -1,5 +1,5 @@
 import React from "react";
-import { Facebook, Instagram, Twitter, Mail, Phone, MapPin, Shield, FileText, Code } from "lucide-react";
+import { Facebook, Instagram, Twitter, Mail, Phone, MapPin, Shield, FileText, Code, Trash2 } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
 const Footer = () => {
@@ -118,7 +118,7 @@ const Footer = () => {
 
             {/* Información legal */}
             <div>
-              <h4 className="text-lg font-semibold text-white mb-4">Legal</h4>
+              <h4 className="text-lg font-semibold text-white mb-4">Legal & Privacidad</h4>
               <ul className="space-y-2 text-sm">
                 <li>
                   <Link
@@ -138,6 +138,15 @@ const Footer = () => {
                     Términos y Condiciones
                   </Link>
                 </li>
+                <li>
+                  <Link
+                      to="/eliminacion-de-cuenta"
+                      className="hover:text-primary transition-colors flex items-center"
+                  >
+                    <Trash2 className="h-4 w-4 mr-2" />
+                    Eliminación de Cuenta
+                  </Link>
+                </li>
               </ul>
 
               <div className="mt-6">
@@ -155,7 +164,9 @@ const Footer = () => {
               <h4 className="text-lg font-semibold text-white mb-4">Síguenos</h4>
               <div className="flex space-x-4 mb-6">
                 <a
-                    href="#"
+                    href="https://www.facebook.com/MotoserviceEc"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-gray-400 hover:text-primary transition-colors p-2 bg-gray-700 rounded-full hover:bg-gray-600"
                     aria-label="Facebook"
                 >
